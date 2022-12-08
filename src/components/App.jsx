@@ -1,7 +1,10 @@
 import React from "react";
+import Heading from "./Heading";
 
 function App() {
-    return <div>Hello world from App component!</div>
+    return <div>
+        <Heading/>
+    </div>
 };
 
 export default App;
