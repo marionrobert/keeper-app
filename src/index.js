@@ -1,4 +1,8 @@
 //1. Create a new React app.
+import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.createRoot(document.getElementById("root")).render(<h1>Hello World!</h1>);
 //2. Create a App.jsx component.
 //3. Create a Header.jsx component that renders a <header> element
 //to show the Keeper App name in an <h1>.
