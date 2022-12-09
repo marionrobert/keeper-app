@@ -17,3 +17,7 @@ root.render(<App />);
 //https://l1pp6.csb.app/
 
 //HINT: You will need to study the classes in teh styles.css file to appy styling.
+
+
+// part 2
+//Challenge. Render all the notes inside notes.js as a seperate Note component.
