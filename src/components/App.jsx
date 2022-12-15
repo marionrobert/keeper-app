@@ -2,14 +2,18 @@ import React from "react";
 import Heading from "./Heading";
 import Footer from "./Footer";
 import Note from "./Note";
-
 import CreateArea from "./CreateArea";
 
 function App() {
+
+    function addNote(note){
+        console.log(note);
+    }
+
     return (
       <div>
         <Heading />
-        <CreateArea />
+        <CreateArea onAdd={addNote}/>
         <Note key={1} title="Note title" content="Note content" />
         <Footer />
       </div>
@@ -18,6 +22,8 @@ function App() {
 
 export default App;
 
+// pass in a function as a prop of CreateArea component --> CreateArea onAdd={addNote}
+// --> addNote is going to be added as a value to one of the props(onAdd) for the create area component
 
 // part 2
 // import notes from "../notes";
