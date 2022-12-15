@@ -22,6 +22,10 @@ function CreateArea(props) {
         // calling this onAdd from the props is going o be equivalent to calling the addNote function from the App.jsx
         // + pass over the current note which is needed by the addNote function
         props.onAdd(note);
+        setNote({
+            title: "",
+            content: ""
+        });
         event.preventDefault();
     }
 
